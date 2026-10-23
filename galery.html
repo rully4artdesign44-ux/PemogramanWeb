@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Web Perdanaku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="atas">
+    <div class="wadah">
+      <a class="logo" href="home.html">Web Perdanaku</a>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="galery.html" class="aktif">Gallery</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wadah">
+      <h1 id="galeri">Gallery</h1>
+      <p class="intro">Beberapa momen yang sempat saya abadikan. Klik foto untuk memperbesar.</p>
+      <div class="galeri">
+        <figure class="lebar">
+          <a href="#senja"><img src="img/senja.jpg" alt="Senja dari kolam infinity" loading="lazy"></a>
+          <figcaption><strong>Senja dari kolam infinity</strong><span>Matahari terbenam di balik perbukitan</span></figcaption>
+        </figure>
+        <figure>
+          <a href="#kampung"><img src="img/kampung.jpg" alt="Perkampungan di lereng bukit" loading="lazy"></a>
+          <figcaption><strong>Perkampungan di lereng bukit</strong><span>Rumah-rumah warna-warni di sore hari</span></figcaption>
+        </figure>
+        <figure>
+          <a href="#cermin"><img src="img/cermin.jpg" alt="Deretan cermin cembung" loading="lazy"></a>
+          <figcaption><strong>Deretan cermin cembung</strong><span>Sudut unik sebuah kafe</span></figcaption>
+        </figure>
+        <figure class="lebar">
+          <a href="#monumen"><img src="img/monumen.jpg" alt="Monumen Perjuangan Rakyat Jawa Barat" loading="lazy"></a>
+          <figcaption><strong>Monumen Perjuangan Rakyat Jawa Barat</strong><span>Bangunan putih ikonik di Bandung</span></figcaption>
+        </figure>
+        <figure class="lebar">
+          <a href="#potret"><img src="img/potret.jpg" alt="Berfoto di taman" loading="lazy"></a>
+          <figcaption><strong>Berfoto di taman</strong><span>Santai berlatar tanaman hijau</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="lightbox" id="senja">
+        <a class="tutup" href="#galeri" aria-label="Tutup">&times;</a>
+        <a class="sebelum" href="#potret" aria-label="Foto sebelumnya">&lsaquo;</a>
+        <img src="img/senja.jpg" alt="Senja dari kolam infinity">
+        <p>Senja dari kolam infinity</p>
+        <a class="sesudah" href="#kampung" aria-label="Foto berikutnya">&rsaquo;</a>
+      </div>
+      <div class="lightbox" id="kampung">
+        <a class="tutup" href="#galeri" aria-label="Tutup">&times;</a>
+        <a class="sebelum" href="#senja" aria-label="Foto sebelumnya">&lsaquo;</a>
+        <img src="img/kampung.jpg" alt="Perkampungan di lereng bukit">
+        <p>Perkampungan di lereng bukit</p>
+        <a class="sesudah" href="#cermin" aria-label="Foto berikutnya">&rsaquo;</a>
+      </div>
+      <div class="lightbox" id="cermin">
+        <a class="tutup" href="#galeri" aria-label="Tutup">&times;</a>
+        <a class="sebelum" href="#kampung" aria-label="Foto sebelumnya">&lsaquo;</a>
+        <img src="img/cermin.jpg" alt="Deretan cermin cembung">
+        <p>Deretan cermin cembung</p>
+        <a class="sesudah" href="#monumen" aria-label="Foto berikutnya">&rsaquo;</a>
+      </div>
+      <div class="lightbox" id="monumen">
+        <a class="tutup" href="#galeri" aria-label="Tutup">&times;</a>
+        <a class="sebelum" href="#cermin" aria-label="Foto sebelumnya">&lsaquo;</a>
+        <img src="img/monumen.jpg" alt="Monumen Perjuangan Rakyat Jawa Barat">
+        <p>Monumen Perjuangan Rakyat Jawa Barat</p>
+        <a class="sesudah" href="#potret" aria-label="Foto berikutnya">&rsaquo;</a>
+      </div>
+
+      <div class="lightbox" id="potret">
+        <a class="tutup" href="#galeri" aria-label="Tutup">&times;</a>
+        <a class="sebelum" href="#monumen" aria-label="Foto sebelumnya">&lsaquo;</a>
+        <img src="img/potret.jpg" alt="Berfoto di taman">
+        <p>Berfoto di taman</p>
+        <a class="sesudah" href="#senja" aria-label="Foto berikutnya">&rsaquo;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Web Perdanaku &middot; <a href="home.html">Home</a> &middot; <a href="galery.html">Gallery</a> &middot; <a href="kontak.html">Kontak</a></footer>
+
+</body>
+</html>
